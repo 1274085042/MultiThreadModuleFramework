@@ -1,0 +1,8 @@
+SystemConfig.channelCount = 2;
+
+#Camera 
+Camera.ch0 = 
+Camera.ch1 = 
+
+#Sender
+MsgSend.resAddressPort = tcp://*:5353
