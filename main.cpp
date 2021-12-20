@@ -81,7 +81,7 @@ int main(int argc, const char *argv[])
     moduleManager.RunPipeline();
 
     /*
-    TODO:接受用户触发的外部中断，注意用户触发的外部中断不会使程序的变量正常析构
+    TODO:接受用户触发的外部中断，并对Module经行DeInit
     */
     return 0;
 }
