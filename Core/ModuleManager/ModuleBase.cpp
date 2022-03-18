@@ -30,6 +30,9 @@ void ModuleBase::SetOutputInfo(string moduleName, vector<shared_ptr<ThreadSafeQu
 bool ModuleBase::Run()
 {
     cout << moduleName_ << "[" << instanceId_ << "] run."<<endl;
+    /*
+    * 线程对象在基类中，如果在派生类对象析构前，没有对该线程对象join()，程序报错
+    */
     processThread_ = thread(&ModuleBase::ProcessThread, this);
     return true;
 }

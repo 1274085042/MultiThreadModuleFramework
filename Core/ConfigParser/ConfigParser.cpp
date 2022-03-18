@@ -48,7 +48,7 @@ bool ConfigParser::ParseConfig(const string &fileName)
             newLine = line.substr(startPos, (endPos-startPos + 1));  //删除注释
             pos = newLine.find('=');
 
-            if (pos = -1)
+            if (pos == -1)
             {
                 continue;
             }
